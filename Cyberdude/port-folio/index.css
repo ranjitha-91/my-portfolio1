@@ -8,6 +8,7 @@
 :root{
     --primary:#12bdff;
    --dark-primary:#1b1f24;
+   --primary-hover:#8ce235;
 }
 body{
     font-family: "Noto Sans", sans-serif;
@@ -22,19 +23,19 @@ header{
     align-items: center;
 
 }
-ul{
+ header ul{
     display:flex;
     list-style: none;
 }
-ul li{
+header ul li{
     margin-right:10px;
 
 }
-ul li a{
+ ul li a{
     color:#fff;
     text-decoration: none;
 }
-ul li a:hover{
+header ul li a:hover{
     color:var(--primary);
     font-weight: bold;
 }
@@ -46,21 +47,126 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-header button{
-    padding:10px 20px;
-    font-weight: bold;
+
+header .logo{
+font-weight: 600;
+color:var(--primary);
+letter-spacing: 2px;
+}
+.hero-section{
+    background-color: var(--dark-primary);
+    display: flex;
+    color:white;
+    align-items: center;
+    padding:20px 120px 0 240px;
+}
+.hero-image__title{
+    font-size: 48px;
+    font-weight: 800;
+
+}
+.hero-section{
+ background-color: var(--dark-primary);
+}
+.hero-section__desc{
+color: #c4c4c4;
+}
+.social-icons{
+    margin:20px 0 ;
+}
+.social-icons li{
+    margin-right:15px
+}
+ul.social-icons{
+    list-style: none;
+    display:flex;
+}
+.social-icons li > a{
+    text-decoration: none;
+    color:#fff;
+}
+.social-icons li a > i.fa-facebook:hover{
+color:#1877f2;
+}
+.social-icons li a > i.fa-linkedin:hover{
+    color:#feda75;
+    }
+.social-icons li a > i.fa-instagram:hover{
+        color:#00acee;
+        }
+.social-icons li a > i.fa-twitter:hover{
+            color:#1877f2;
+            }
+            .btn{
+                background-color: white;
+                padding:10px;
+                border-radius: 7px;
+                cursor: pointer;
+                border:none;
+            }
+.btn.btn-primary{
+    background-color: var(--primary);
+    font-weight: 600;
+    color:white;
+}    
+.btn.btn-primary:hover{
+    background-color: var(--primary-hover);
+}        
+.btn-dark-outline{
     background-color: var(--dark-primary);
     border:1px solid var(--primary);
     color:var(--primary);
-    border-radius: 7px;
+     border-radius: 7px;
+     font-weight: 600;
 }
+.hero-btn button{
+    margin-right: 10px;
+}
+
+   
 header button:hover{
     background-color: var(--primary);
     cursor: pointer;
     color:var(--dark-primary);
 }
-header .logo{
-font-weight: 600;
-color:var(--primary);
-letter-spacing: 2px;
+.span{
+    color:var(--primary);
+}
+.about-section{
+    background-color: #22282f;
+    color:#fff;
+    padding:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section img{
+    width: 350px;
+    height:350px;
+    border-radius: 10px;
+    border:3px solid var(--primary);
+    box-shadow: 5px 10px 40px var(--primary);
+}
+.about-section-desc h4{
+    font-size: 30px;
+    font-weight: 900;
+}
+.about-section-desc{
+    margin-left: 100px;
+    max-width: 450px;
+} 
+.about-section-desc ul{
+    list-style: none;
+    margin:10px 0;
+}  
+.about-section-desc li{
+    margin-bottom: 8px;
+    color:gray;
+}
+.about-section-desc li>strong{
+    color:#fff;
+}
+
+.about-section span{
+    color:var(--primary);
 }
