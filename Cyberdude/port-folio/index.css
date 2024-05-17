@@ -170,3 +170,48 @@ header button:hover{
 .about-section span{
     color:var(--primary);
 }
+.work-section{
+    background-color: var(--dark-primary);
+    color:#fff;
+    padding:60px;
+    text-align: center;
+}
+.work-section-box{
+    background-color: #22282f;
+    padding: 30px;
+    max-width:300px;
+    text-align: left;
+    border-radius:10px;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+.work-section-box a{
+    text-decoration: none;
+    color:#feda75;
+    display:block;
+    margin-top: 10px;
+
+}
+.work-section-box-icon{
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+.work-section-box:hover{
+background-color: #14171c;
+}
+.work-section-box-desc{
+    padding-top: 5px;
+}
+.work-section-items{
+    display:flex;
+    justify-content: center;
+}
+.work-section-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.work-section-title span{
+    color:var(--primary)
+}
