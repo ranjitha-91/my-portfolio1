@@ -9,9 +9,9 @@
     --primary:#12bdff;
    --dark-primary:#1b1f24;
    --primary-hover:#8ce235;
-}
+   --font:"Noto Sans";}
 body{
-    font-family: "Noto Sans", sans-serif;
+    font-family: var(--font)
 }
 
 header{
@@ -214,4 +214,50 @@ background-color: #14171c;
 }
 .work-section-title span{
     color:var(--primary)
+}
+.contact-section{
+    background-color: #14171c;
+    padding: 40px;
+    color:#fff;
+    text-align: center;
+}
+.contact-section form input{
+    padding:5px 10px;
+    outline:none;
+    width:350px;
+    background-color: #c4c4c4;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  
+}
+.contact-section form textarea{
+    padding:5px 10px;
+    outline:none;
+    width:350px;
+    background-color: #c4c4c4;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contact-section span{
+    color:var(--primary);
+}
+.contact-section-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+   
+}
+footer{
+    background-color: var(--dark-primary);
+    color:gray;
+    padding:20px;
+    text-align: center;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
 }
