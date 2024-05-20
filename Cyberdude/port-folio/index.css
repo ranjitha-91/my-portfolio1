@@ -23,6 +23,9 @@ header{
     align-items: center;
 
 }
+html{
+    scroll-behavior: smooth;
+}
  header ul{
     display:flex;
     list-style: none;
@@ -232,7 +235,7 @@ background-color: #14171c;
     margin-bottom: 10px;
   
 }
-.contact-section form textarea{
+.contact-section form input textarea{
     padding:5px 10px;
     outline:none;
     width:350px;
@@ -260,4 +263,58 @@ footer{
 }
 a{
     text-decoration: none;
+}
+@media only screen and (max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    header > *{
+        margin-bottom: 10px;
+    }
+    section.hero-section{
+        flex-direction: column;
+        padding:40px;
+    }
+    section.about-section{
+        flex-direction: column;
+    }
+    .about-section-desc{
+        margin-left: 0;
+        margin-top:30px;
+       
+    }
+    section.work-section{
+        flex-direction: column; 
+    }
+    .about-section-desc{
+        margin-left: 0;
+        margin-top:30px;
+
+    }
+    .work-section-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-section-box{
+        margin-bottom: 20px;
+        width:100%;
+        margin-right:0;
+    }
+    .contact-section form input,textarea{
+        padding:5px 10px;
+        outline:none;
+        width:350px;
+        border:none;
+        background-color: #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        resize:none;
+        font-family: var(--nunito);
+        
+
+    }
+    .contact-section form input, textarea {
+        width:100%;
+    }
+
 }
