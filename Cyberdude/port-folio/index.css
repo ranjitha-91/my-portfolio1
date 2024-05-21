@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 :root{
-    --primary:#12bdff;
+    --primary:#234abc;
    --dark-primary:#1b1f24;
    --primary-hover:#8ce235;
    --font:"Noto Sans";}
@@ -16,6 +16,7 @@ body{
 
 header{
     background-color:var(--dark-primary);
+    
     padding:20px;
     color:#fff;
     display: flex;
